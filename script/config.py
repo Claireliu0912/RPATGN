@@ -54,7 +54,6 @@ else:
     args.device = torch.device("cpu")
     print('using cpu to train the model')
 
-# 设置随机数种子
 torch.manual_seed(args.seed)
 if torch.cuda.is_available():
     torch.cuda.manual_seed_all(args.seed)
