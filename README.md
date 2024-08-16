@@ -7,9 +7,9 @@ The implementation for "Regulating Related Party Transactions with Role Perceptu
 We conducted experiments on four real-world financial datasets:
 
 - **RPT:** The dataset was collected from regularly disclosed RPT data in the Chinese financial market. It includes profiles of listed companies and related companies, RPT operation information, and financial exchanges involved in these transactions. In the graph,nodes represent listed companies or related parties, and an edge can be considered as an indication of a related party transaction between two nodes. It is a private dataset, and we are currently working closely with our partners on data anonymization and open sourcing, aiming to contribute this valuable industry-level dataset to the academic community and promote research on RPT. 
-- **Elliptic:** The dataset maps Bitcoin transactions to real entities belonging to licit categories versus illicit ones. A node in the graph represents a transaction, an edge can be viewed as a flow of Bitcoins between one transaction and the other. It is available at https://www.kaggle.com/datasets/ellipticco/elliptic-data-set.
-- **Bitcoin OTC:** It is who-trusts-whom network of people who trade using Bitcoin on a platform called Bitcoin OTC. Nodes represent Bitcoin users, edges represent ratings between users, and it can be used to predict whether a user will rate another user in the next time step. It is available at http://snap.stanford.edu/data/soc-sign-bitcoin-otc.html.
-- **Bitcoin Alpha:** The dataset was created in the same way as the Bitcoin OTC dataset, except that the users and ratings come from a different trading platform. It is available at https://snap.stanford.edu/data/soc-sign-bitcoin-alpha.html.
+- **Elliptic:** The dataset maps Bitcoin transactions to real entities belonging to licit categories versus illicit ones. A node in the graph represents a transaction, an edge can be viewed as a flow of Bitcoins between one transaction and the other. 
+- **Bitcoin OTC:** It is who-trusts-whom network of people who trade using Bitcoin on a platform called Bitcoin OTC. Nodes represent Bitcoin users, edges represent ratings between users, and it can be used to predict whether a user will rate another user in the next time step. 
+- **Bitcoin Alpha:** The dataset was created in the same way as the Bitcoin OTC dataset, except that the users and ratings come from a different trading platform. 
 
 ## Usage
 
