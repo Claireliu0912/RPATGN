@@ -11,13 +11,28 @@ We conducted experiments on four real-world financial datasets:
 - **Bitcoin OTC:** It is who-trusts-whom network of people who trade using Bitcoin on a platform called Bitcoin OTC. Nodes represent Bitcoin users, edges represent ratings between users, and it can be used to predict whether a user will rate another user in the next time step. 
 - **Bitcoin Alpha:** The dataset was created in the same way as the Bitcoin OTC dataset, except that the users and ratings come from a different trading platform. 
 
+## Baselines
+
+We compare the performance of our proposed method with the state-of-the-art baselines:
+
+- **GAE: ** Encodes node features using a GCN and reconstructs the graph's adjacency matrix using an inner product decoder.
+- **VGAE:** An extension of GAE that learns the latent representation of nodes through variational inference, better handling the uncertainty in graph data.  
+- **DySAT:** The model employs attention mechanisms along spatial and temporal dimensions, using GAT and transformers respectively.
+- **EvolveGCN:** EvolveGCN adapts the GCN model over the time dimension by evolving GCN parameters through RNNs to capture the dynamics of graph sequences.
+- **GRUGCN:** The model combines CNNs and RNNs for graph-structured data to simultaneously recognize spatial structures and dynamic patterns.
+- **VGRNN:** It adds higher-order latent variables to the graph recurrent neural network to model the complex dynamics of the graph. 
+- **HTGN:** A node representation learning framework based on hyperbolic geometry, mapping temporal graphs to hyperbolic space to learn temporal regularities, topological dependencies, and implicit hierarchical organization.
+- **DGCN:** A dynamic graph representation learning model that combines GCN and LSTM to capture both global structure and temporal properties, using a novel Dice similarity measure for node aggregation.
+- **HGWaveNet:** A hyperbolic graph neural network that leverage the fitness between hyperbolic spaces and data distributions for temporal link prediction.
+- **RTGCN:** The model utilize global structural role information for temporal graph representation learning, combining structural role-based hypergraphs, GNN, and GRU modules.
+
 ## Usage
 
 To test implementations of RPATGN, run:
 
 ```python
-python main.py --dataset otc --nhid 64 --nout 64 --nb_window 5
-python main.py --dataset alpha --nhid 64 --nout 64 --nb_window 5
+python main.py --dataset otc --nhid 32 --nout 32 --nb_window 5
+python main.py --dataset alpha --nhid 32 --nout 32 --nb_window 5
 ```
 
 ### Parameter settings

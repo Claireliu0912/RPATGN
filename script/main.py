@@ -79,7 +79,7 @@ class Runner(object):
                 optimizer.zero_grad()
 
                 z, kld_loss = self.model(edge_index, self.x, self.roles[t])
-                train_loss = self.loss(z, pos_index,neg_index) + kld_loss
+                train_loss = self.loss(z, edge_index) + kld_loss
 
                 train_loss.backward()
                 optimizer.step()

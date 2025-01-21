@@ -6,12 +6,12 @@ import yaml
 parser = argparse.ArgumentParser(description='RPATGN')
 
 parser.add_argument('--config', type=str, default='', help='hyperparameter configuration')
-parser.add_argument('--dataset', type=str, default='bitcoin', help='datasets')
+parser.add_argument('--dataset', type=str, default='otc', help='datasets')
 parser.add_argument('--data_pt_path', type=str, default='', help='need to be modified')
 parser.add_argument('--num_nodes', type=int, default=-1, help='num of nodes')
 parser.add_argument('--nfeat', type=int, default=128, help='dim of input feature')
-parser.add_argument('--nhid', type=int, default=64, help='dim of hidden embedding')
-parser.add_argument('--nout', type=int, default=64, help='dim of output embedding')
+parser.add_argument('--nhid', type=int, default=32, help='dim of hidden embedding')
+parser.add_argument('--nout', type=int, default=32, help='dim of output embedding')
 
 parser.add_argument('--max_epoch', type=int, default=200, help='number of epochs to train.')
 parser.add_argument('--testlength', type=int, default=1, help='length for test, default:3')
