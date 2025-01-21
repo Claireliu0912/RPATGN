@@ -15,7 +15,7 @@ We conducted experiments on four real-world financial datasets:
 
 We compare the performance of our proposed method with the state-of-the-art baselines:
 
-- **GAE: ** Encodes node features using a GCN and reconstructs the graph's adjacency matrix using an inner product decoder.
+- **GAE:** Encodes node features using a GCN and reconstructs the graph's adjacency matrix using an inner product decoder.
 - **VGAE:** An extension of GAE that learns the latent representation of nodes through variational inference, better handling the uncertainty in graph data.  
 - **DySAT:** The model employs attention mechanisms along spatial and temporal dimensions, using GAT and transformers respectively.
 - **EvolveGCN:** EvolveGCN adapts the GCN model over the time dimension by evolving GCN parameters through RNNs to capture the dynamics of graph sequences.
