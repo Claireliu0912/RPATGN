@@ -1,6 +1,6 @@
 # RPATGN
 
-The implementation for "Regulating Related Party Transactions with Role Perceptual Augmented Temporal Graph Network".
+The implementation for "Role Perceptual Augmented Temporal Graph Network for Related-party Transaction Detection".
 
 ## Dataset
 
