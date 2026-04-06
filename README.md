@@ -4,7 +4,7 @@ The implementation of "**Role Perceptual Augmented Temporal Graph Network for Re
 
 [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/41240)
 [Poster](https://underline.io/lecture/138944-role-perceptual-augmented-temporal-graph-network-for-related-party-transaction-detection)
-[Supplementary](https://github.com/Claireliu0912/RPATGN/script/supplementary.pdf)
+[Supplementary](https://github.com/Claireliu0912/RPATGN/blob/main/script/supplementary.pdf)
 
 
 ## Environment Setup
