@@ -9,9 +9,9 @@ The implementation of "**Role Perceptual Augmented Temporal Graph Network for Re
 
 ## Environment Setup
 
-- Python 3.7
-- PyTorch 1.12.1
-- CUDA 11.3
+- Python 3.7.11
+- PyTorch 1.13.1
+- torch-geometric 2.3.1
 - numpy, scikit_learn, tqdm
 
 ## Datasets
